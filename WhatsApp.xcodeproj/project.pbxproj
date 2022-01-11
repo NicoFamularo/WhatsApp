@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E12278E17D2006DD7D4 /* AppDelegate.swift */; };
 		03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E14278E17D2006DD7D4 /* SceneDelegate.swift */; };
-		03377E17278E17D2006DD7D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E16278E17D2006DD7D4 /* ViewController.swift */; };
-		03377E1A278E17D2006DD7D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03377E18278E17D2006DD7D4 /* Main.storyboard */; };
 		03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03377E1B278E17D5006DD7D4 /* Assets.xcassets */; };
 		03377E1F278E17D5006DD7D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03377E1D278E17D5006DD7D4 /* LaunchScreen.storyboard */; };
+		03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E28278E1A7C006DD7D4 /* HomeViewController.swift */; };
+		03377E2B278E1A7C006DD7D4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03377E29278E1A7C006DD7D4 /* HomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		03377E0F278E17D2006DD7D4 /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03377E12278E17D2006DD7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03377E14278E17D2006DD7D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		03377E16278E17D2006DD7D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		03377E19278E17D2006DD7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03377E1B278E17D5006DD7D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03377E1E278E17D5006DD7D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03377E20278E17D5006DD7D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03377E28278E1A7C006DD7D4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		03377E29278E1A7C006DD7D4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,31 @@
 		03377E11278E17D2006DD7D4 /* WhatsApp */ = {
 			isa = PBXGroup;
 			children = (
-				03377E12278E17D2006DD7D4 /* AppDelegate.swift */,
-				03377E14278E17D2006DD7D4 /* SceneDelegate.swift */,
-				03377E16278E17D2006DD7D4 /* ViewController.swift */,
-				03377E18278E17D2006DD7D4 /* Main.storyboard */,
+				03377E26278E180F006DD7D4 /* Launch */,
+				03377E27278E1878006DD7D4 /* Home */,
 				03377E1B278E17D5006DD7D4 /* Assets.xcassets */,
-				03377E1D278E17D5006DD7D4 /* LaunchScreen.storyboard */,
 				03377E20278E17D5006DD7D4 /* Info.plist */,
 			);
 			path = WhatsApp;
+			sourceTree = "<group>";
+		};
+		03377E26278E180F006DD7D4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				03377E12278E17D2006DD7D4 /* AppDelegate.swift */,
+				03377E14278E17D2006DD7D4 /* SceneDelegate.swift */,
+				03377E1D278E17D5006DD7D4 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		03377E27278E1878006DD7D4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03377E28278E1A7C006DD7D4 /* HomeViewController.swift */,
+				03377E29278E1A7C006DD7D4 /* HomeViewController.xib */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +142,7 @@
 			files = (
 				03377E1F278E17D5006DD7D4 /* LaunchScreen.storyboard in Resources */,
 				03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */,
-				03377E1A278E17D2006DD7D4 /* Main.storyboard in Resources */,
+				03377E2B278E1A7C006DD7D4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +153,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03377E17278E17D2006DD7D4 /* ViewController.swift in Sources */,
 				03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */,
 				03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */,
+				03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		03377E18278E17D2006DD7D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03377E19278E17D2006DD7D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03377E1D278E17D5006DD7D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
