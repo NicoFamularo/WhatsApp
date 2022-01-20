@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0310B7A42798E669006ADC34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310B7A32798E669006ADC34 /* Extensions.swift */; };
 		03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E12278E17D2006DD7D4 /* AppDelegate.swift */; };
 		03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E14278E17D2006DD7D4 /* SceneDelegate.swift */; };
 		03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03377E1B278E17D5006DD7D4 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0310B7A32798E669006ADC34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		03377E0F278E17D2006DD7D4 /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03377E12278E17D2006DD7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03377E14278E17D2006DD7D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0310B7A22798E650006ADC34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0310B7A32798E669006ADC34 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		03377E06278E17D2006DD7D4 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 			children = (
 				03377E26278E180F006DD7D4 /* Launch */,
 				03377E27278E1878006DD7D4 /* Home */,
+				0310B7A22798E650006ADC34 /* Extensions */,
 				03377E1B278E17D5006DD7D4 /* Assets.xcassets */,
 				03377E20278E17D5006DD7D4 /* Info.plist */,
 			);
@@ -154,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */,
+				0310B7A42798E669006ADC34 /* Extensions.swift in Sources */,
 				03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */,
 				03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */,
 			);
