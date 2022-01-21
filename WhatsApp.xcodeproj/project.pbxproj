@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0310B7A42798E669006ADC34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310B7A32798E669006ADC34 /* Extensions.swift */; };
+		030C3FCE279B414B0021B9BF /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FCC279B414B0021B9BF /* ChatsViewController.swift */; };
+		030C3FCF279B414B0021B9BF /* ChatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FCD279B414B0021B9BF /* ChatsViewController.xib */; };
+		030C3FD1279B41C80021B9BF /* InsertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FD0279B41C80021B9BF /* InsertVC.swift */; };
+		030C3FD4279B549A0021B9BF /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FD2279B549A0021B9BF /* StatusViewController.swift */; };
+		030C3FD5279B549A0021B9BF /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FD3279B549A0021B9BF /* StatusViewController.xib */; };
+		030C3FD8279B54E40021B9BF /* CallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FD6279B54E40021B9BF /* CallsViewController.swift */; };
+		030C3FD9279B54E40021B9BF /* CallsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FD7279B54E40021B9BF /* CallsViewController.xib */; };
+		030C3FDC279B54F90021B9BF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FDA279B54F90021B9BF /* CameraViewController.swift */; };
+		030C3FDD279B54F90021B9BF /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FDB279B54F90021B9BF /* CameraViewController.xib */; };
+		0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310B7A32798E669006ADC34 /* ScrollTo.swift */; };
 		03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E12278E17D2006DD7D4 /* AppDelegate.swift */; };
 		03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E14278E17D2006DD7D4 /* SceneDelegate.swift */; };
 		03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03377E1B278E17D5006DD7D4 /* Assets.xcassets */; };
@@ -17,7 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0310B7A32798E669006ADC34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		030C3FCC279B414B0021B9BF /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		030C3FCD279B414B0021B9BF /* ChatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsViewController.xib; sourceTree = "<group>"; };
+		030C3FD0279B41C80021B9BF /* InsertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertVC.swift; path = ../../../InsertVC.swift; sourceTree = "<group>"; };
+		030C3FD2279B549A0021B9BF /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		030C3FD3279B549A0021B9BF /* StatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusViewController.xib; sourceTree = "<group>"; };
+		030C3FD6279B54E40021B9BF /* CallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewController.swift; sourceTree = "<group>"; };
+		030C3FD7279B54E40021B9BF /* CallsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallsViewController.xib; sourceTree = "<group>"; };
+		030C3FDA279B54F90021B9BF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		030C3FDB279B54F90021B9BF /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		0310B7A32798E669006ADC34 /* ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTo.swift; sourceTree = "<group>"; };
 		03377E0F278E17D2006DD7D4 /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03377E12278E17D2006DD7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03377E14278E17D2006DD7D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,10 +57,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		030C3FC6279B409E0021B9BF /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				030C3FCC279B414B0021B9BF /* ChatsViewController.swift */,
+				030C3FCD279B414B0021B9BF /* ChatsViewController.xib */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		030C3FC7279B40B30021B9BF /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				030C3FDA279B54F90021B9BF /* CameraViewController.swift */,
+				030C3FDB279B54F90021B9BF /* CameraViewController.xib */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		030C3FC8279B40BA0021B9BF /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				030C3FD2279B549A0021B9BF /* StatusViewController.swift */,
+				030C3FD3279B549A0021B9BF /* StatusViewController.xib */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		030C3FC9279B40C40021B9BF /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				030C3FD6279B54E40021B9BF /* CallsViewController.swift */,
+				030C3FD7279B54E40021B9BF /* CallsViewController.xib */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		030C3FCB279B40F10021B9BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				03377E28278E1A7C006DD7D4 /* HomeViewController.swift */,
+				03377E29278E1A7C006DD7D4 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		0310B7A22798E650006ADC34 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				0310B7A32798E669006ADC34 /* Extensions.swift */,
+				0310B7A32798E669006ADC34 /* ScrollTo.swift */,
+				030C3FD0279B41C80021B9BF /* InsertVC.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -88,8 +152,11 @@
 		03377E27278E1878006DD7D4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				03377E28278E1A7C006DD7D4 /* HomeViewController.swift */,
-				03377E29278E1A7C006DD7D4 /* HomeViewController.xib */,
+				030C3FCB279B40F10021B9BF /* Home */,
+				030C3FC7279B40B30021B9BF /* Camera */,
+				030C3FC6279B409E0021B9BF /* Chats */,
+				030C3FC8279B40BA0021B9BF /* Status */,
+				030C3FC9279B40C40021B9BF /* Calls */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -151,8 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030C3FDD279B54F90021B9BF /* CameraViewController.xib in Resources */,
+				030C3FD9279B54E40021B9BF /* CallsViewController.xib in Resources */,
 				03377E1F278E17D5006DD7D4 /* LaunchScreen.storyboard in Resources */,
 				03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */,
+				030C3FCF279B414B0021B9BF /* ChatsViewController.xib in Resources */,
+				030C3FD5279B549A0021B9BF /* StatusViewController.xib in Resources */,
 				03377E2B278E1A7C006DD7D4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,10 +235,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				030C3FD4279B549A0021B9BF /* StatusViewController.swift in Sources */,
 				03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */,
-				0310B7A42798E669006ADC34 /* Extensions.swift in Sources */,
+				030C3FD8279B54E40021B9BF /* CallsViewController.swift in Sources */,
+				0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */,
+				030C3FCE279B414B0021B9BF /* ChatsViewController.swift in Sources */,
 				03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */,
 				03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */,
+				030C3FD1279B41C80021B9BF /* InsertVC.swift in Sources */,
+				030C3FDC279B54F90021B9BF /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

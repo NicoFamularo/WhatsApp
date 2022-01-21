@@ -15,7 +15,10 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var scrollView:   UIScrollView!
     
-    @IBOutlet weak var cameraImage: UIImageView!
+    @IBOutlet weak var topView: UIView!
+    @IBOutlet weak var topViewTopConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var cameraImage:  UIImageView!
     @IBOutlet weak var chatsButton:  UIButton!
     @IBOutlet weak var statusButton: UIButton!
     @IBOutlet weak var callsButton:  UIButton!
@@ -28,13 +31,27 @@ class HomeViewController: UIViewController {
 
     //MARK: Variables / Constants
     
+    private let cameraVC = CameraViewController()
+    private let chatsVC  = ChatsViewController()
+    private let statusVC = StatusViewController()
+    private let callsVC  = CallsViewController()
+    
+    private var firstTimeStart = true
+    
     
     //MARK: Life Cycle
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         scrollView.delegate = self
+
+        insertVC(cameraVC, in: cameraView)
+        insertVC(chatsVC,  in: chatsView)
+        insertVC(statusVC, in: statusView)
+        insertVC(callsVC,  in: callsView)
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -43,9 +60,22 @@ class HomeViewController: UIViewController {
             
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if firstTimeStart == true {
+            scrollView.scrollTo(page: 1, animated: false)
+            selectedButtonColor(page: 1)
+            firstTimeStart = false
+        }
+        
+    }
+    
+    
+    
     override func viewDidAppear(_ animated: Bool) {
-        scrollView.scrollTo(page: 1)
-        selectedButtonColor(page: 1)
+        super.viewDidAppear(animated)
+        
     }
         
     override func viewWillDisappear(_ animated: Bool) {
@@ -98,6 +128,13 @@ class HomeViewController: UIViewController {
         default:
             chatsButton.setTitleColor(UIColor(  named: "selectedItemsColor"),    for: .normal)
         }
+        
+        if page == 0 {
+            topViewTopConstraint.constant = -topView.frame.height
+        } else {
+            topViewTopConstraint.constant = 0
+        }
+        animatedLayoutIfNeeded()
     }
     
     

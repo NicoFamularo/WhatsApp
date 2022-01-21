@@ -20,6 +20,8 @@
                 <outlet property="scrollView" destination="gkh-ul-Dkd" id="iax-TQ-Yu7"/>
                 <outlet property="statusButton" destination="xnq-Oi-dFg" id="bXB-Jg-VCz"/>
                 <outlet property="statusView" destination="l63-sA-BIO" id="gHq-KN-M1H"/>
+                <outlet property="topView" destination="VOV-nG-T1V" id="TDm-s0-E89"/>
+                <outlet property="topViewTopConstraint" destination="Emy-aE-5GX" id="bxK-x0-UlS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -170,19 +172,19 @@
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ec7-VY-rfa">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
-                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zah-hi-stw">
                                     <rect key="frame" x="375" y="0.0" width="375" height="599"/>
-                                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l63-sA-BIO">
                                     <rect key="frame" x="750" y="0.0" width="375" height="599"/>
-                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                                 <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIz-L9-B3V">
                                     <rect key="frame" x="1125" y="0.0" width="375" height="599"/>
-                                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </view>
                             </subviews>
                             <constraints>
@@ -191,35 +193,36 @@
                                 <constraint firstItem="ec7-VY-rfa" firstAttribute="width" secondItem="l63-sA-BIO" secondAttribute="width" id="tOp-QP-6S5"/>
                             </constraints>
                         </stackView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-5G-9kr">
-                            <rect key="frame" x="0.0" y="0.0" width="1500" height="599"/>
-                            <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
-                        </button>
                     </subviews>
+                    <color key="backgroundColor" name="AccentColor"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="B6S-h7-4Lz" secondAttribute="bottom" id="0IQ-zZ-MEV"/>
                         <constraint firstItem="B6S-h7-4Lz" firstAttribute="leading" secondItem="gkh-ul-Dkd" secondAttribute="leading" id="8Wg-Y3-OAB"/>
-                        <constraint firstAttribute="bottom" secondItem="5NM-5G-9kr" secondAttribute="bottom" id="NMC-q5-qja"/>
-                        <constraint firstItem="5NM-5G-9kr" firstAttribute="leading" secondItem="gkh-ul-Dkd" secondAttribute="leading" id="Sht-ko-RgL"/>
-                        <constraint firstItem="5NM-5G-9kr" firstAttribute="top" secondItem="gkh-ul-Dkd" secondAttribute="top" id="U8g-mJ-Ds4"/>
                         <constraint firstItem="B6S-h7-4Lz" firstAttribute="top" secondItem="gkh-ul-Dkd" secondAttribute="top" id="Yfk-TQ-7q1"/>
                         <constraint firstAttribute="trailing" secondItem="B6S-h7-4Lz" secondAttribute="trailing" id="g4N-nJ-yoX"/>
                         <constraint firstItem="ec7-VY-rfa" firstAttribute="width" secondItem="gkh-ul-Dkd" secondAttribute="width" id="gxm-5U-pKN"/>
                         <constraint firstItem="ec7-VY-rfa" firstAttribute="height" secondItem="gkh-ul-Dkd" secondAttribute="height" id="j1U-Sr-WlK"/>
-                        <constraint firstAttribute="trailing" secondItem="5NM-5G-9kr" secondAttribute="trailing" id="lN2-SD-stQ"/>
                     </constraints>
                 </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="amG-sj-NOk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <color key="backgroundColor" name="topBannerColor"/>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" name="principalBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="gkh-ul-Dkd" firstAttribute="trailing" secondItem="VOV-nG-T1V" secondAttribute="trailing" id="0Fi-4B-9Af"/>
                 <constraint firstItem="gkh-ul-Dkd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DnG-qd-kz5"/>
                 <constraint firstItem="VOV-nG-T1V" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Emy-aE-5GX"/>
                 <constraint firstItem="gkh-ul-Dkd" firstAttribute="top" secondItem="VOV-nG-T1V" secondAttribute="bottom" id="JN8-G4-UTu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="amG-sj-NOk" secondAttribute="trailing" id="NB1-hn-Cca"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gkh-ul-Dkd" secondAttribute="bottom" id="NiY-pM-05H"/>
+                <constraint firstItem="amG-sj-NOk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PrO-rd-3qM"/>
+                <constraint firstItem="amG-sj-NOk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Uh1-AB-aNh"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VOV-nG-T1V" secondAttribute="trailing" id="bbh-nS-zJA"/>
                 <constraint firstItem="VOV-nG-T1V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cXq-Gg-gUc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="amG-sj-NOk" secondAttribute="bottom" id="vZ7-iv-FbW"/>
             </constraints>
             <point key="canvasLocation" x="66.666666666666671" y="62.771739130434788"/>
         </view>
@@ -227,29 +230,17 @@
     <resources>
         <image name="cameraIconImage" width="526" height="423"/>
         <image name="lensIconImage" width="1600" height="1600"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="nonSelectedItemsColor">
             <color red="0.5215686559677124" green="0.56862747669219971" blue="0.61960786581039429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="principalBackgroundColor">
-            <color red="0.070588238537311554" green="0.10588234663009644" blue="0.13333332538604736" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="topBannerColor">
             <color red="0.12156863510608673" green="0.17254900932312012" blue="0.20392158627510071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
