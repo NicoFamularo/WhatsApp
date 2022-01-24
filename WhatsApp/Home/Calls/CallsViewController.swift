@@ -8,22 +8,37 @@
 import UIKit
 
 class CallsViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var callsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureTableView()
+    }
+    
+    func configureTableView(){
+        let nibName = UINib(nibName: "\(CallCell.self)", bundle: nil)
+        callsTableView.register(nibName, forCellReuseIdentifier: "\(CallCell.self)")
+        callsTableView.reloadData()
     }
 
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension CallsViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return UserDataModel.getList().count
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(CallCell.self)", for: indexPath) as? CallCell
+        else{
+                return UITableViewCell()
+            }
+        let user = UserDataModel.getList()[indexPath.row]
+        cell.setData(user)
+        return cell
+    }
+    
+    
 }

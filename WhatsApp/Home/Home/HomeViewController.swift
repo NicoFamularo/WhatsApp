@@ -149,3 +149,7 @@ extension HomeViewController: UIScrollViewDelegate {
         selectedButtonColor(page: scrollView.currentPage)
     }
 }
+
+
+
+
