@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="79" id="KGk-i7-Jjw" customClass="StatusCell" customModule="WhatsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="242" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bk9-da-ApQ">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callIconImage" translatesAutoresizingMaskIntoConstraints="NO" id="sV8-TE-oDY">
+                                <rect key="frame" x="10" y="10" width="45" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="5nN-zb-nsi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBh-vL-iUU">
+                                <rect key="frame" x="70" y="22" width="77" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="opositeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StoryTime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wts-lY-iQX">
+                                <rect key="frame" x="70" y="43.5" width="57.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="principalBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="sV8-TE-oDY" firstAttribute="leading" secondItem="Bk9-da-ApQ" secondAttribute="leading" constant="10" id="DyU-KB-SBY"/>
+                            <constraint firstItem="lBh-vL-iUU" firstAttribute="leading" secondItem="sV8-TE-oDY" secondAttribute="trailing" constant="15" id="Kmr-H3-6Ht"/>
+                            <constraint firstAttribute="height" constant="80" id="LOn-eq-TVg"/>
+                            <constraint firstItem="lBh-vL-iUU" firstAttribute="top" secondItem="Bk9-da-ApQ" secondAttribute="top" constant="22" id="TtV-Dk-nLz"/>
+                            <constraint firstItem="sV8-TE-oDY" firstAttribute="top" secondItem="Bk9-da-ApQ" secondAttribute="top" constant="10" id="VrE-DR-CmO"/>
+                            <constraint firstAttribute="bottom" secondItem="sV8-TE-oDY" secondAttribute="bottom" constant="10" id="XbT-sh-JfO"/>
+                            <constraint firstAttribute="width" constant="300" id="iki-fa-E6C"/>
+                            <constraint firstItem="wts-lY-iQX" firstAttribute="leading" secondItem="sV8-TE-oDY" secondAttribute="trailing" constant="15" id="o7t-FS-tdK"/>
+                            <constraint firstAttribute="bottom" secondItem="wts-lY-iQX" secondAttribute="bottom" constant="22" id="u73-zD-VD7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Bk9-da-ApQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cih-1Q-ksB"/>
+                    <constraint firstItem="Bk9-da-ApQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yXb-a8-dXG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellWidth" destination="iki-fa-E6C" id="cbh-qx-Rwo"/>
+                <outlet property="imageUser" destination="sV8-TE-oDY" id="rwO-Yk-MR3"/>
+                <outlet property="storyTime" destination="wts-lY-iQX" id="fSb-fS-HZt"/>
+                <outlet property="userName" destination="lBh-vL-iUU" id="p4w-Av-sKD"/>
+            </connections>
+            <point key="canvasLocation" x="-31.884057971014496" y="58.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="callIconImage" width="130" height="130"/>
+        <namedColor name="opositeColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="principalBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

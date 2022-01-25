@@ -21,6 +21,8 @@
 		030E0C1F279F6094004B767F /* ChatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C1D279F6094004B767F /* ChatsViewController.xib */; };
 		030E0C24279F6216004B767F /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C22279F6216004B767F /* ChatCell.swift */; };
 		030E0C25279F6216004B767F /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C23279F6216004B767F /* ChatCell.xib */; };
+		030E0C2B279F9CC4004B767F /* StatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C29279F9CC4004B767F /* StatusCell.swift */; };
+		030E0C2C279F9CC4004B767F /* StatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C2A279F9CC4004B767F /* StatusCell.xib */; };
 		0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310B7A32798E669006ADC34 /* ScrollTo.swift */; };
 		03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E12278E17D2006DD7D4 /* AppDelegate.swift */; };
 		03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E14278E17D2006DD7D4 /* SceneDelegate.swift */; };
@@ -45,6 +47,8 @@
 		030E0C1D279F6094004B767F /* ChatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsViewController.xib; sourceTree = "<group>"; };
 		030E0C22279F6216004B767F /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
 		030E0C23279F6216004B767F /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		030E0C29279F9CC4004B767F /* StatusCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCell.swift; sourceTree = "<group>"; };
+		030E0C2A279F9CC4004B767F /* StatusCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusCell.xib; sourceTree = "<group>"; };
 		0310B7A32798E669006ADC34 /* ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTo.swift; sourceTree = "<group>"; };
 		03377E0F278E17D2006DD7D4 /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03377E12278E17D2006DD7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				030E0C21279F61E1004B767F /* Chats */,
+				030E0C28279F9C96004B767F /* Status */,
 				030E0C17279F47E3004B767F /* Calls */,
 			);
 			path = Cells;
@@ -146,6 +151,15 @@
 				030E0C23279F6216004B767F /* ChatCell.xib */,
 			);
 			path = Chats;
+			sourceTree = "<group>";
+		};
+		030E0C28279F9C96004B767F /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				030E0C29279F9CC4004B767F /* StatusCell.swift */,
+				030E0C2A279F9CC4004B767F /* StatusCell.xib */,
+			);
+			path = Status;
 			sourceTree = "<group>";
 		};
 		0310B7A22798E650006ADC34 /* Extensions */ = {
@@ -266,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				030C3FDD279B54F90021B9BF /* CameraViewController.xib in Resources */,
+				030E0C2C279F9CC4004B767F /* StatusCell.xib in Resources */,
 				030C3FD9279B54E40021B9BF /* CallsViewController.xib in Resources */,
 				030E0C1F279F6094004B767F /* ChatsViewController.xib in Resources */,
 				03377E1F278E17D5006DD7D4 /* LaunchScreen.storyboard in Resources */,
@@ -290,6 +305,7 @@
 				030C3FD8279B54E40021B9BF /* CallsViewController.swift in Sources */,
 				0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */,
 				030E0C24279F6216004B767F /* ChatCell.swift in Sources */,
+				030E0C2B279F9CC4004B767F /* StatusCell.swift in Sources */,
 				03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */,
 				030E0C1E279F6094004B767F /* ChatsViewController.swift in Sources */,
 				03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */,

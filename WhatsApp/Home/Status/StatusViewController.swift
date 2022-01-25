@@ -9,21 +9,36 @@ import UIKit
 
 class StatusViewController: UIViewController {
 
+    @IBOutlet weak var statusTableView : UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configTableView()
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func configTableView(){
+        let nibName = UINib(nibName: "\(StatusCell.self)", bundle: nil)
+        statusTableView.register(nibName, forCellReuseIdentifier: "\(StatusCell.self)")
+        statusTableView.reloadData()
     }
-    */
+}
 
+
+extension StatusViewController : UITableViewDataSource, UITabBarDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return UserDataModel.getList().count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "\(StatusCell.self)", for: indexPath) as? StatusCell
+        else{
+                return UITableViewCell()
+            }
+        let user = UserDataModel.getList()[indexPath.row]
+        cell.setData(user)
+        return cell
+    }
+    
+    
 }

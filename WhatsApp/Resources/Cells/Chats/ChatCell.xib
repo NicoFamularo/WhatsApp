@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="377" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsR-bw-K3k">
+                    <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BsR-bw-K3k">
                         <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK2-Bx-P0F" userLabel="PopUp">
@@ -62,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="principalBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Mb4-VN-R86" secondAttribute="trailing" constant="15" id="Kjw-MG-uPY"/>
                             <constraint firstItem="CK2-Bx-P0F" firstAttribute="centerX" secondItem="W0v-gy-eaL" secondAttribute="centerX" id="L9K-ej-VTj"/>
@@ -82,6 +83,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" name="principalBackgroundColor"/>
                 <constraints>
                     <constraint firstItem="BsR-bw-K3k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Aob-gG-57G"/>
                     <constraint firstAttribute="bottom" secondItem="BsR-bw-K3k" secondAttribute="bottom" id="Xx0-hg-XX8"/>
@@ -102,6 +104,9 @@
     </objects>
     <resources>
         <image name="callIconImage" width="130" height="130"/>
+        <namedColor name="principalBackgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

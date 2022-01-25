@@ -237,7 +237,7 @@
             <color red="0.5215686559677124" green="0.56862747669219971" blue="0.61960786581039429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="topBannerColor">
-            <color red="0.12156863510608673" green="0.17254900932312012" blue="0.20392158627510071" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.023529412224888802" green="0.65882354974746704" blue="0.52549022436141968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
