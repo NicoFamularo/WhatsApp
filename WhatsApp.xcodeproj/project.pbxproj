@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		030C3FCE279B414B0021B9BF /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FCC279B414B0021B9BF /* ChatsViewController.swift */; };
 		030C3FD1279B41C80021B9BF /* InsertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FD0279B41C80021B9BF /* InsertVC.swift */; };
 		030C3FD4279B549A0021B9BF /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FD2279B549A0021B9BF /* StatusViewController.swift */; };
 		030C3FD5279B549A0021B9BF /* StatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FD3279B549A0021B9BF /* StatusViewController.xib */; };
@@ -16,9 +15,12 @@
 		030C3FDC279B54F90021B9BF /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030C3FDA279B54F90021B9BF /* CameraViewController.swift */; };
 		030C3FDD279B54F90021B9BF /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030C3FDB279B54F90021B9BF /* CameraViewController.xib */; };
 		030E0C12279F3098004B767F /* UsersData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C11279F3098004B767F /* UsersData.swift */; };
-		030E0C15279F3294004B767F /* ChatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C13279F3294004B767F /* ChatsTableViewCell.swift */; };
 		030E0C1A279F480A004B767F /* CallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C18279F480A004B767F /* CallCell.swift */; };
 		030E0C1B279F480A004B767F /* CallCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C19279F480A004B767F /* CallCell.xib */; };
+		030E0C1E279F6094004B767F /* ChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C1C279F6094004B767F /* ChatsViewController.swift */; };
+		030E0C1F279F6094004B767F /* ChatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C1D279F6094004B767F /* ChatsViewController.xib */; };
+		030E0C24279F6216004B767F /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E0C22279F6216004B767F /* ChatCell.swift */; };
+		030E0C25279F6216004B767F /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 030E0C23279F6216004B767F /* ChatCell.xib */; };
 		0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310B7A32798E669006ADC34 /* ScrollTo.swift */; };
 		03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E12278E17D2006DD7D4 /* AppDelegate.swift */; };
 		03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03377E14278E17D2006DD7D4 /* SceneDelegate.swift */; };
@@ -29,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		030C3FCC279B414B0021B9BF /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
 		030C3FD0279B41C80021B9BF /* InsertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InsertVC.swift; path = ../../../InsertVC.swift; sourceTree = "<group>"; };
 		030C3FD2279B549A0021B9BF /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		030C3FD3279B549A0021B9BF /* StatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatusViewController.xib; sourceTree = "<group>"; };
@@ -38,9 +39,12 @@
 		030C3FDA279B54F90021B9BF /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		030C3FDB279B54F90021B9BF /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
 		030E0C11279F3098004B767F /* UsersData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersData.swift; sourceTree = "<group>"; };
-		030E0C13279F3294004B767F /* ChatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsTableViewCell.swift; sourceTree = "<group>"; };
 		030E0C18279F480A004B767F /* CallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallCell.swift; sourceTree = "<group>"; };
 		030E0C19279F480A004B767F /* CallCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallCell.xib; sourceTree = "<group>"; };
+		030E0C1C279F6094004B767F /* ChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsViewController.swift; sourceTree = "<group>"; };
+		030E0C1D279F6094004B767F /* ChatsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatsViewController.xib; sourceTree = "<group>"; };
+		030E0C22279F6216004B767F /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		030E0C23279F6216004B767F /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		0310B7A32798E669006ADC34 /* ScrollTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTo.swift; sourceTree = "<group>"; };
 		03377E0F278E17D2006DD7D4 /* WhatsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03377E12278E17D2006DD7D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +70,8 @@
 		030C3FC6279B409E0021B9BF /* Chats */ = {
 			isa = PBXGroup;
 			children = (
-				030C3FCC279B414B0021B9BF /* ChatsViewController.swift */,
+				030E0C1C279F6094004B767F /* ChatsViewController.swift */,
+				030E0C1D279F6094004B767F /* ChatsViewController.xib */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -110,9 +115,8 @@
 		030E0C10279F3072004B767F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				030E0C17279F47E3004B767F /* Calls */,
+				030E0C20279F61CE004B767F /* Cells */,
 				030E0C11279F3098004B767F /* UsersData.swift */,
-				030E0C13279F3294004B767F /* ChatsTableViewCell.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -124,6 +128,24 @@
 				030E0C19279F480A004B767F /* CallCell.xib */,
 			);
 			path = Calls;
+			sourceTree = "<group>";
+		};
+		030E0C20279F61CE004B767F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				030E0C21279F61E1004B767F /* Chats */,
+				030E0C17279F47E3004B767F /* Calls */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		030E0C21279F61E1004B767F /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				030E0C22279F6216004B767F /* ChatCell.swift */,
+				030E0C23279F6216004B767F /* ChatCell.xib */,
+			);
+			path = Chats;
 			sourceTree = "<group>";
 		};
 		0310B7A22798E650006ADC34 /* Extensions */ = {
@@ -245,10 +267,12 @@
 			files = (
 				030C3FDD279B54F90021B9BF /* CameraViewController.xib in Resources */,
 				030C3FD9279B54E40021B9BF /* CallsViewController.xib in Resources */,
+				030E0C1F279F6094004B767F /* ChatsViewController.xib in Resources */,
 				03377E1F278E17D5006DD7D4 /* LaunchScreen.storyboard in Resources */,
 				03377E1C278E17D5006DD7D4 /* Assets.xcassets in Resources */,
 				030C3FD5279B549A0021B9BF /* StatusViewController.xib in Resources */,
 				030E0C1B279F480A004B767F /* CallCell.xib in Resources */,
+				030E0C25279F6216004B767F /* ChatCell.xib in Resources */,
 				03377E2B278E1A7C006DD7D4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +289,12 @@
 				03377E13278E17D2006DD7D4 /* AppDelegate.swift in Sources */,
 				030C3FD8279B54E40021B9BF /* CallsViewController.swift in Sources */,
 				0310B7A42798E669006ADC34 /* ScrollTo.swift in Sources */,
-				030C3FCE279B414B0021B9BF /* ChatsViewController.swift in Sources */,
+				030E0C24279F6216004B767F /* ChatCell.swift in Sources */,
 				03377E15278E17D2006DD7D4 /* SceneDelegate.swift in Sources */,
+				030E0C1E279F6094004B767F /* ChatsViewController.swift in Sources */,
 				03377E2A278E1A7C006DD7D4 /* HomeViewController.swift in Sources */,
 				030C3FD1279B41C80021B9BF /* InsertVC.swift in Sources */,
 				030E0C12279F3098004B767F /* UsersData.swift in Sources */,
-				030E0C15279F3294004B767F /* ChatsTableViewCell.swift in Sources */,
 				030C3FDC279B54F90021B9BF /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
