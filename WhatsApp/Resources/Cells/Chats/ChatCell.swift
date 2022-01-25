@@ -15,9 +15,14 @@ class ChatCell: UITableViewCell {
     @IBOutlet weak var lastMessageLabel:        UILabel!
     @IBOutlet weak var nonViewedMessagesLabel:  UILabel!
     @IBOutlet weak var popUpNumberBackground:   UIView!
+    @IBOutlet weak var cellWidth: NSLayoutConstraint!
+    
+    let screenSize: CGRect = UIScreen.main.bounds
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        cellWidth.constant = screenSize.width
+        
     }
     
     func setData(_ user : UserDataModel){

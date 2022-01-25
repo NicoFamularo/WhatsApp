@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="330" height="80"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CK2-Bx-P0F" userLabel="PopUp">
-                                <rect key="frame" x="247" y="45.5" width="18" height="18"/>
+                                <rect key="frame" x="252" y="45.5" width="18" height="18"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="18" id="0Qy-Su-abd"/>
@@ -50,13 +50,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastConnection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb4-VN-R86">
-                                <rect key="frame" x="202" y="15" width="108" height="18"/>
+                                <rect key="frame" x="207" y="15" width="108" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NonViewed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0v-gy-eaL">
-                                <rect key="frame" x="219.5" y="46.5" width="73" height="16"/>
+                                <rect key="frame" x="224.5" y="46.5" width="73" height="16"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,15 +64,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="330" id="5EZ-tI-Ag1"/>
+                            <constraint firstAttribute="trailing" secondItem="Mb4-VN-R86" secondAttribute="trailing" constant="15" id="Kjw-MG-uPY"/>
                             <constraint firstItem="CK2-Bx-P0F" firstAttribute="centerX" secondItem="W0v-gy-eaL" secondAttribute="centerX" id="L9K-ej-VTj"/>
                             <constraint firstAttribute="bottom" secondItem="akl-0V-wrU" secondAttribute="bottom" constant="15" id="OeW-bw-jyI"/>
                             <constraint firstItem="e1E-Rc-93g" firstAttribute="top" secondItem="BsR-bw-K3k" secondAttribute="top" constant="15" id="YbW-Ve-zp0"/>
                             <constraint firstItem="W0v-gy-eaL" firstAttribute="centerX" secondItem="Mb4-VN-R86" secondAttribute="centerX" id="av7-TH-psm"/>
                             <constraint firstItem="Mxb-Wc-oNS" firstAttribute="top" secondItem="BsR-bw-K3k" secondAttribute="top" constant="10" id="drL-mX-pdf"/>
-                            <constraint firstAttribute="trailing" secondItem="Mb4-VN-R86" secondAttribute="trailing" constant="20" id="iHS-LQ-qeB"/>
                             <constraint firstAttribute="bottom" secondItem="Mxb-Wc-oNS" secondAttribute="bottom" constant="10" id="juC-cZ-TFQ"/>
                             <constraint firstItem="Mb4-VN-R86" firstAttribute="top" secondItem="BsR-bw-K3k" secondAttribute="top" constant="15" id="ouC-df-gOV"/>
+                            <constraint firstAttribute="width" constant="330" id="qCe-gU-Jiv"/>
                             <constraint firstItem="e1E-Rc-93g" firstAttribute="leading" secondItem="Mxb-Wc-oNS" secondAttribute="trailing" constant="10" id="qdA-Lb-qsT"/>
                             <constraint firstItem="akl-0V-wrU" firstAttribute="leading" secondItem="Mxb-Wc-oNS" secondAttribute="trailing" constant="10" id="reI-nS-x0G"/>
                             <constraint firstItem="Mxb-Wc-oNS" firstAttribute="leading" secondItem="BsR-bw-K3k" secondAttribute="leading" constant="10" id="tik-87-PV8"/>
@@ -90,6 +90,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="cellWidth" destination="qCe-gU-Jiv" id="MJq-i5-DhN"/>
                 <outlet property="lastConnectionLabel" destination="Mb4-VN-R86" id="kUG-i0-Y0Q"/>
                 <outlet property="lastMessageLabel" destination="akl-0V-wrU" id="C8U-2M-LdI"/>
                 <outlet property="nonViewedMessagesLabel" destination="W0v-gy-eaL" id="mIJ-eV-7Ke"/>

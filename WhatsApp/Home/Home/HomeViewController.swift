@@ -38,6 +38,8 @@ class HomeViewController: UIViewController {
     
     private var firstTimeStart = true
     
+    private var pageIndex : Int = 1
+    
     
     //MARK: Life Cycle
     
@@ -89,18 +91,22 @@ class HomeViewController: UIViewController {
     
     @IBAction func cameraction(_ sender: UIButton) {
         scrollView.scrollTo(page: 0)
+        pageIndex = 0
     }
     @IBAction func chatsAction(_ sender: UIButton) {
         selectedButtonColor(page: 1)
         scrollView.scrollTo(page: 1)
+        pageIndex = 1
     }
     @IBAction func statusAction(_ sender: UIButton) {
         selectedButtonColor(page: 2)
         scrollView.scrollTo(page: 2)
+        pageIndex = 2
     }
     @IBAction func callsAction(_ sender: UIButton) {
         selectedButtonColor(page: 3)
         scrollView.scrollTo(page: 3)
+        pageIndex = 3
     }
     
     func selectedButtonColor (page: Int){
@@ -142,14 +148,11 @@ class HomeViewController: UIViewController {
 }
 
 
-
-
-extension HomeViewController: UIScrollViewDelegate {
+extension HomeViewController : UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         selectedButtonColor(page: scrollView.currentPage)
     }
 }
-
 
 
 
